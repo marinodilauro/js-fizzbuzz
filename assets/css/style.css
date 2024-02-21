@@ -1,0 +1,73 @@
+/* #region ||||| UTILITIES ||||| */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fzb-page_bg: rgb(250, 248, 239);
+  --fzb-app_bg: rgb(187, 173, 160);
+  --fzb-square_bg: rgb(238, 228, 218);
+  --fzb-fizz_bg: rgb(242, 177, 121);
+  --fzb-buzz_bg: rgb(245, 149, 99);
+  --fzb-fizzbuzz_bg: rgb(246, 124, 95);
+  --fzb-font_light: rgb(249, 245, 240);
+  --fzb-font_dark: rgb(117, 112, 104);
+}
+
+
+/* #endregion ||||| UTILITIES ||||| */
+
+
+/* #region ||||| COMMON RULES ||||| */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--fzb-page_bg);
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--fzb-font_dark);
+}
+
+/* #endregion ||||| COMMON RULES ||||| */
+
+
+/* #region ||||| MAIN ||||| */
+
+.mc_app {
+  background-color: var(--fzb-app_bg);
+  width: 90%;
+  max-width: 1200px;
+
+  .mc_square {
+    background-color: var(--fzb-square_bg);
+    color: var(--fzb-font_dark);
+    font-size: 1.5rem;
+    width: 100px;
+    aspect-ratio: 1;
+    line-height: 100px;
+  }
+
+  .mc_fizz {
+    background-color: var(--fzb-fizz_bg);
+    color: var(--fzb-font_light);
+  }
+
+  .mc_buzz {
+    background-color: var(--fzb-buzz_bg);
+    color: var(--fzb-font_light);
+  }
+
+  .mc_fizzbuzz {
+    background-color: var(--fzb-fizzbuzz_bg);
+    color: var(--fzb-font_light);
+    font-size: 1.2rem;
+  }
+}
+
+/* #endregion ||||| MAIN ||||| */

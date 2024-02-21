@@ -1,6 +1,6 @@
 // Creo delle variabili e assegno loro l'elemento HTML in cui voglio creare altri elementi HTML tramite JS
 
-const listElement = document.querySelector(".list");
+const rowElement = document.querySelector(".row");
 //console.log(listElement);
 
 // Creo variabili per gli output speciali
@@ -18,22 +18,22 @@ for (let i = 1; i <= 100; i++) {
   if (i % 3 == 0 && i % 5 == 0) {
 
     //console.log(fizzbuzz);
-    listElement.insertAdjacentHTML("beforeend", `<li>${fizzbuzz}</li>`);
+    rowElement.insertAdjacentHTML("beforeend", `<div class="mc_square mc_fizzbuzz rounded text-center fw-bold">${fizzbuzz}</div>`);
 
   } else if (i % 3 == 0) {
 
     //console.log(fizz);
-    listElement.insertAdjacentHTML("beforeend", `<li>${fizz}</li>`);
+    rowElement.insertAdjacentHTML("beforeend", `<div class="mc_square mc_fizz rounded text-center fw-bold">${fizz}</div>`);
 
   } else if (i % 5 == 0) {
 
     //console.log(buzz);
-    listElement.insertAdjacentHTML("beforeend", `<li>${buzz}</li>`);
+    rowElement.insertAdjacentHTML("beforeend", `<div class="mc_square mc_buzz rounded text-center fw-bold">${buzz}</div>`);
 
   } else {
 
     // console.log(i)
-    listElement.insertAdjacentHTML("beforeend", `<li>${i}</li>`);
+    rowElement.insertAdjacentHTML("beforeend", `<div class="mc_square rounded text-center fw-bold">${i}</div>`);
 
   };
 
